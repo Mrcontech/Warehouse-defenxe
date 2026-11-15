@@ -24,3 +24,7 @@ Thumbs.db
 
 # Office lock files
 ~$*
+
+# design skill used while building (restore with: npx skills add Leonxlnx/taste-skill --skill design-taste-frontend)
+.agents/
+.claude/skills/
