@@ -1,0 +1,41 @@
+{
+  "name": "ebsu-data-warehouse",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Design and Implementation of a Data Warehouse and Business Intelligence Dashboard for University Administration (EBSU final year project). All data is simulated.",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "start": "node scripts/start.mjs",
+    "check": "node scripts/start.mjs --check",
+    "setup": "node scripts/start.mjs --setup-only",
+    "reset": "node scripts/start.mjs --reset",
+    "reset-admin": "node scripts/start.mjs --reset-admin",
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "serve": "next start -p 3000",
+    "typecheck": "tsc --noEmit",
+    "generate-data": "node scripts/start.mjs --generate-data",
+    "etl": "node scripts/start.mjs --etl",
+    "test": "node scripts/start.mjs --test"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "2.1.10",
+    "geist": "1.7.2",
+    "mysql2": "3.24.5",
+    "next": "16.3.8",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "recharts": "3.10.1",
+    "server-only": "0.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "22.18.0",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "tailwindcss": "4.3.3",
+    "typescript": "5.9.3"
+  }
+}

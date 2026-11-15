@@ -1,0 +1,30 @@
+# dependencies
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# next.js
+.next/
+next-env.d.ts
+*.tsbuildinfo
+
+# local settings and secrets
+.env.local
+.env*.local
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# runner state
+.runtime/
+
+# Office lock files
+~$*
+
+# design skill used while building (restore with: npx skills add Leonxlnx/taste-skill --skill design-taste-frontend)
+.agents/
+.claude/skills/

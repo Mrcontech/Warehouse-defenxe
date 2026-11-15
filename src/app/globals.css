@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+/* Design tokens. Light mode only, warm off-white canvas, one red accent. */
+@theme {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+
+  --color-canvas: #f2efeb;
+  --color-surface: #fcfbfa;
+  --color-surface-2: #f6f3ef;
+  --color-line: #e6e1db;
+  --color-line-strong: #d3ccc4;
+
+  --color-ink: #1f1d1b;
+  --color-ink-2: #46423e;
+  --color-muted: #6f6a64;
+  --color-faint: #a39d96;
+
+  --color-accent: #d9443e;
+  --color-accent-ink: #b5302c;
+  --color-accent-soft: #fbe7e5;
+  --color-accent-tint: #f4cdc9;
+
+  --color-night: #211f1d;
+  --color-night-2: #2d2a27;
+  --color-night-line: #3a3632;
+  --color-night-muted: #b4ada5;
+
+  --color-series-1: #2f6fa3;
+  --color-series-2: #d9443e;
+  --color-series-1-dark: #4a86bd;
+  --color-series-2-dark: #e2605a;
+  --color-deemph: #d3ccc4;
+
+  --color-good: #1e6f41;
+  --color-good-soft: #e2f1e7;
+  --color-warn: #7d5300;
+  --color-warn-soft: #faefd6;
+  --color-bad: #a3302b;
+  --color-bad-soft: #fbe4e1;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: var(--color-accent-tint);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-ink);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-line);
+    border-radius: 18px;
+  }
+  .card-night {
+    background: var(--color-night);
+    color: #fff8f5;
+    border-radius: 18px;
+  }
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+  .press {
+    transition: transform 120ms ease, background-color 120ms ease, color 120ms ease;
+  }
+  .press:active {
+    transform: scale(0.98);
+  }
+  .recharts-surface:focus,
+  .recharts-wrapper:focus {
+    outline: none;
+  }
+  .recharts-cartesian-axis-tick-value {
+    fill: var(--color-muted);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0ms !important;
+    animation-duration: 0ms !important;
+  }
+}
