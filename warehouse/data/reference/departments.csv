@@ -1,0 +1,51 @@
+faculty_code,faculty_name,department_code,department_name,degree_awarded,programme_years,first_intake,aliases
+FARM,Faculty of Agriculture and Natural Resources Management,AEM,"Agricultural Economics, Management and Extension",B.Agric.,5,2015/2016,"Agric Economics, Management and Extension;Agricultural Economics & Extension;Agric. Economics"
+FARM,Faculty of Agriculture and Natural Resources Management,ANS,Animal Science,B.Agric.,5,2015/2016,Animal Sci.
+FARM,Faculty of Agriculture and Natural Resources Management,CSL,Crop Science and Landscape Management,B.Agric.,5,2015/2016,Crop Science;Crop Science & Landscape Management
+FARM,Faculty of Agriculture and Natural Resources Management,FAQ,Fisheries and Aquaculture,B.Agric.,5,2015/2016,Fisheries & Aquaculture
+FARM,Faculty of Agriculture and Natural Resources Management,SEM,Soil and Environmental Management,B.Agric.,5,2015/2016,Soil Science;Soil & Environmental Management
+FBMS,Faculty of Basic Medical Sciences,ANA,Anatomy,B.Sc.,4,2015/2016,Human Anatomy
+FBMS,Faculty of Basic Medical Sciences,MBS,Medicine and Surgery,MBBS,6,2015/2016,Medicine & Surgery;MBBS
+FBMS,Faculty of Basic Medical Sciences,PHS,Physiology,B.Sc.,4,2015/2016,Human Physiology
+FEDU,Faculty of Education,ASE,Arts and Social Science Education,B.A.(Ed.),4,2015/2016,Arts & Social Science Education
+FEDU,Faculty of Education,BED,Business Education,B.Sc.(Ed.),4,2015/2016,Business Educ.
+FEDU,Faculty of Education,EDF,Educational Foundations,B.Ed.,4,2015/2016,Educational Foundation;Edu. Foundations
+FEDU,Faculty of Education,SED,Science Education,B.Sc.(Ed.),4,2015/2016,Sci. Education
+FEDU,Faculty of Education,VTE,Vocational and Technical Education,B.Sc.(Ed.),4,2015/2016,Vocational & Technical Education;Voc. Tech. Education
+FENG,Faculty of Engineering and Environmental Science,ARC,Architecture,B.Sc.,4,2023/2024,Archi.
+FENG,Faculty of Engineering and Environmental Science,BLD,Building,B.Sc.,5,2023/2024,Building Tech.
+FENG,Faculty of Engineering and Environmental Science,CHE,Chemical Engineering,B.Eng.,5,2023/2024,Chem. Engineering
+FENG,Faculty of Engineering and Environmental Science,CVE,Civil Engineering,B.Eng.,5,2023/2024,Civil Eng.
+FENG,Faculty of Engineering and Environmental Science,EEE,Electrical and Electronics Engineering,B.Eng.,5,2023/2024,Electrical/Electronics Engineering;Elect. & Electronics Engineering
+FENG,Faculty of Engineering and Environmental Science,ESM,Estate Management,B.Sc.,5,2023/2024,Estate Mgt.
+FENG,Faculty of Engineering and Environmental Science,EVM,Environmental Management,B.Sc.,4,2023/2024,Environmental Mgt.
+FHST,Faculty of Health Sciences and Technology,MLS,Medical Laboratory Science,BMLS,5,2015/2016,Med. Lab. Science;Medical Lab Science
+FHST,Faculty of Health Sciences and Technology,NSC,Nursing Science,B.N.Sc.,5,2015/2016,Nursing
+FLAW,Faculty of Law,LAW,Law,LL.B.,5,2015/2016,Law (LL.B.)
+FMS,Faculty of Management Sciences,ACC,Accountancy,B.Sc.,4,2015/2016,Accounting
+FMS,Faculty of Management Sciences,BFN,Banking and Finance,B.Sc.,4,2015/2016,Banking & Finance
+FMS,Faculty of Management Sciences,BUS,Business Management,B.Sc.,4,2015/2016,Business Admin.;Business Mgt.
+FMS,Faculty of Management Sciences,MKT,Marketing,B.Sc.,4,2015/2016,Mktg.
+FMS,Faculty of Management Sciences,PAD,Public Administration,B.Sc.,4,2015/2016,Public Admin.
+FSC,Faculty of Science,ABG,Applied Biology,B.Sc.,4,2015/2016,Applied Bio.
+FSC,Faculty of Science,AMB,Applied Microbiology,B.Sc.,4,2015/2016,Microbiology;Applied Micro.
+FSC,Faculty of Science,BCH,Biochemistry,B.Sc.,4,2015/2016,Biochem.
+FSC,Faculty of Science,BTN,Biotechnology,B.Sc.,4,2015/2016,Biotech.
+FSC,Faculty of Science,CSC,Computer Science,B.Sc.,4,2015/2016,Dept. of Computer Science;Computer Sci.
+FSC,Faculty of Science,GEP,Geology and Exploration Geophysics,B.Sc.,4,2015/2016,Geology;Geology & Exploration Geophysics
+FSC,Faculty of Science,ICH,Industrial Chemistry,B.Sc.,4,2015/2016,Ind. Chemistry
+FSC,Faculty of Science,IMA,Industrial Mathematics,B.Sc.,4,2015/2016,Industrial Maths
+FSC,Faculty of Science,IPH,Industrial Physics,B.Sc.,4,2015/2016,Ind. Physics
+FSC,Faculty of Science,STA,Applied Statistics,B.Sc.,4,2015/2016,Statistics
+FSSH,Faculty of Social Sciences and Humanities,ECO,Economics,B.Sc.,4,2015/2016,Econs.
+FSSH,Faculty of Social Sciences and Humanities,ENL,English Language and Literature,B.A.,4,2015/2016,English & Literature;English Language & Literature
+FSSH,Faculty of Social Sciences and Humanities,HIS,History and International Relations,B.A.,4,2015/2016,History & International Relations;History & Intl. Relations
+FSSH,Faculty of Social Sciences and Humanities,LIN,Languages and Linguistics,B.A.,4,2015/2016,Linguistics;Languages & Linguistics
+FSSH,Faculty of Social Sciences and Humanities,MAC,Mass Communication,B.Sc.,4,2015/2016,Mass Comm;Mass Comm.
+FSSH,Faculty of Social Sciences and Humanities,PHL,Philosophy,B.A.,4,2015/2016,Philo.
+FSSH,Faculty of Social Sciences and Humanities,POL,Political Science,B.Sc.,4,2015/2016,Pol. Science
+FSSH,Faculty of Social Sciences and Humanities,PSY,Psychology,B.Sc.,4,2015/2016,Psych.
+FSSH,Faculty of Social Sciences and Humanities,RPS,Religion and Peace Studies,B.A.,4,2015/2016,Religion & Peace Studies
+FSSH,Faculty of Social Sciences and Humanities,SOC,Sociology and Anthropology,B.Sc.,4,2015/2016,Sociology & Anthropology;Sociology
+FSSH,Faculty of Social Sciences and Humanities,SWK,Social Work,B.Sc.,4,2015/2016,Social Work & Social Development
+FSSH,Faculty of Social Sciences and Humanities,THA,Theatre Arts,B.A.,4,2015/2016,Theatre Art;Theatre & Film Studies
