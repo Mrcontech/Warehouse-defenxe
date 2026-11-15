@@ -40,7 +40,7 @@ export default async function AcademicsPage({ searchParams }: { searchParams: Se
         </div>
         <ChartCard title="CGPA distribution" subtitle={`Students by degree class, ${upTo}. Mean CGPA ${dec2(cgpa.mean)}`} sql={cgpa.sql}
           table={{ columns: ["Degree class", "CGPA range", "Students", "Average CGPA"], align: ["l", "l", "r", "r"],
-            rows: cgpa.rows.map((r, i) => [r.cls, DEGREE_CLASSES[i].range, num(r.students), r.avg_cgpa == null ? "—" : dec2(r.avg_cgpa)]) }}
+            rows: cgpa.rows.map((r, i) => [r.cls, DEGREE_CLASSES[i].range, num(r.students), r.avg_cgpa == null ? "–" : dec2(r.avg_cgpa)]) }}
           footnote="First 4.50-5.00, 2:1 3.50-4.49, 2:2 2.40-3.49, Third 1.50-2.39, Pass 1.00-1.49">
           <Columns data={cgpa.rows.map((r) => ({ label: r.cls, students: r.students }))} series={[{ key: "students", name: "Students", color: COLORS.series1 }]} />
         </ChartCard>

@@ -72,7 +72,8 @@ export function EtlRunner({ last }: { last: LastRun }) {
     let finished = false;
     const fail = (message: string) => {
       finished = true;
-      setStages((s) => (current ? { ...s, [current]: "failed" } : s));
+      const stage = current;
+      setStages((s) => (stage ? { ...s, [stage]: "failed" } : s));
       setResult({ ok: false, text: message });
       push({ t: 0, text: message, tone: "bad" });
     };
@@ -102,12 +103,8 @@ export function EtlRunner({ last }: { last: LastRun }) {
               break;
             case "phase": {
               const phase = e.phase as Stage;
-              setStages((s) => {
-                const next = { ...s };
-                if (current) next[current] = "done";
-                next[phase] = "active";
-                return next;
-              });
+              const previous = current; // read now: the updater below runs later, after current has moved on
+              setStages((s) => ({ ...s, ...(previous ? { [previous]: "done" } : {}), [phase]: "active" }));
               current = phase;
               push({ t, text: phase.toUpperCase() });
               break;

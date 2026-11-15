@@ -87,13 +87,13 @@ Dimensions: `dim_student`, `dim_course`, `dim_department`, `dim_faculty`, `dim_s
 
 **ETL** (`warehouse/etl/etl.py`): reads the three exports and the official department list; applies 20 cleaning rules (matric numbers, session labels, dates, gender, naira amounts, course codes, department names); removes duplicates on each grain's natural key; rejects rows that cannot be trusted, with the reason; loads shadow tables, checks row counts and all 13 foreign keys, then swaps the eight tables in with one atomic `RENAME TABLE`. A failed run leaves the live data untouched. Every run is recorded in `etl_run`, `etl_run_source`, `etl_run_table`, `etl_run_rule` and `etl_reject`.
 
-On the simulated data: 206,885 rows extracted = 206,321 loaded + 478 duplicates + 86 rejected. A full run takes about 5 to 6 seconds.
+On the simulated data: 203,194 rows extracted = 202,638 loaded + 470 duplicates + 86 rejected. A full run takes about five seconds (4.3 to 6.0 s over eight runs).
 
 ## Project layout
 
 ```
 start.bat, start.sh          one-command start
-scripts/start.mjs            the runner behind npm start / check / etl / test (Node built-ins only)
+scripts/start.mjs            the runner behind npm start / check / etl / test (no extra dependencies)
 warehouse/
   generator/                 synthetic data generator (standard library only, fixed seed)
   data/sources/              admissions.csv, bursary.csv, exams.csv (simulated)
@@ -140,7 +140,7 @@ docs/
 
 ## Tests
 
-`npm test` runs `python -m unittest discover -s warehouse/tests -v`: seven tests check the cleaning rules on known inputs, and eight run the real transformation on the full simulated files and check that every source row is accounted for, that each fact table's grain is unique, that every foreign key finds its dimension, that the fee and score arithmetic holds and that every CGPA lies between 0 and 5. Tested with pandas 2.2 and 3.0 on MariaDB 10.11.
+`npm test` runs `python -m unittest discover -s warehouse/tests -v`: seven tests check the cleaning rules on known inputs, and eight run the real transformation on the full simulated files and check that every source row is accounted for, that each fact table's grain is unique, that every foreign key finds its dimension, that the fee and score arithmetic holds and that every CGPA lies between 0 and 5. Tested with pandas 2.2 and 3.1 on MariaDB 10.11.
 
 ## Documents
 

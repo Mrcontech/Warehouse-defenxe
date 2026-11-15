@@ -29,7 +29,7 @@ export function niceTicks(max: number, count = 4): number[] {
 }
 
 export function fmtValue(v: number | null | undefined, f: ValueFormat): string {
-  if (v == null || Number.isNaN(v)) return "—";
+  if (v == null || Number.isNaN(v)) return "–";
   switch (f) {
     case "naira": {
       const a = Math.abs(v);

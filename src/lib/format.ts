@@ -2,14 +2,14 @@
 
 const int = new Intl.NumberFormat("en-NG", { maximumFractionDigits: 0 });
 
-export const num = (n: number | null | undefined) => (n == null || Number.isNaN(n) ? "—" : int.format(Math.round(n)));
-export const dec1 = (n: number | null | undefined) => (n == null ? "—" : n.toFixed(1));
-export const dec2 = (n: number | null | undefined) => (n == null ? "—" : n.toFixed(2));
-export const pct = (n: number | null | undefined, digits = 1) => (n == null ? "—" : `${n.toFixed(digits)}%`);
+export const num = (n: number | null | undefined) => (n == null || Number.isNaN(n) ? "–" : int.format(Math.round(n)));
+export const dec1 = (n: number | null | undefined) => (n == null ? "–" : n.toFixed(1));
+export const dec2 = (n: number | null | undefined) => (n == null ? "–" : n.toFixed(2));
+export const pct = (n: number | null | undefined, digits = 1) => (n == null ? "–" : `${n.toFixed(digits)}%`);
 
 /** ₦636.1m, ₦2.51bn, ₦12,000. */
 export function naira(n: number | null | undefined, opts: { exact?: boolean } = {}): string {
-  if (n == null) return "—";
+  if (n == null) return "–";
   if (opts.exact) return `₦${int.format(Math.round(n))}`;
   const a = Math.abs(n);
   if (a >= 1e9) return `₦${(n / 1e9).toFixed(2)}bn`;
@@ -33,13 +33,13 @@ export function delta(a: number | null | undefined, b: number | null | undefined
 }
 
 export function formatDateTime(s: string | null | undefined): string {
-  if (!s) return "—";
+  if (!s) return "–";
   const d = new Date(s.replace(" ", "T"));
   if (Number.isNaN(d.getTime())) return s;
   return d.toLocaleString("en-GB", { day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" });
 }
 
 export function formatMs(ms: number | null | undefined): string {
-  if (ms == null) return "—";
+  if (ms == null) return "–";
   return ms < 1000 ? `${Math.round(ms)} ms` : `${(ms / 1000).toFixed(1)} s`;
 }

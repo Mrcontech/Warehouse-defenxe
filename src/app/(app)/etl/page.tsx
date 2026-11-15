@@ -115,7 +115,7 @@ export default async function EtlPage() {
                       <td className="py-2.5 pr-3 whitespace-nowrap text-ink-2">{formatDateTime(r.started_at)}</td>
                       <td className="py-2.5 pr-3 text-ink-2">{r.triggered_by}</td>
                       <td className="py-2.5 pr-3 text-right text-ink-2">{formatMs(r.duration_ms)}</td>
-                      <td className="py-2.5 pr-3 text-right text-ink-2">{r.loaded != null && r.status === "success" ? num(r.loaded) : "—"}</td>
+                      <td className="py-2.5 pr-3 text-right text-ink-2">{r.loaded != null && r.status === "success" ? num(r.loaded) : "–"}</td>
                       <td className="py-2.5 text-right">
                         <span className={`inline-flex rounded-full px-2.5 py-0.5 text-[12px] font-medium ${r.status === "success" ? "bg-good-soft text-good" : r.status === "running" ? "bg-warn-soft text-warn" : "bg-bad-soft text-bad"}`}>
                           {r.status === "success" ? "Success" : r.status === "running" ? "Running" : "Failed"}

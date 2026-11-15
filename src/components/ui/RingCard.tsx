@@ -17,7 +17,7 @@ export function RingCard({
         </svg>
         <div className="absolute inset-0 grid place-content-center text-center">
           <div className="text-[13px] text-night-muted">{centerLabel}</div>
-          <div className="tnum text-[30px] font-semibold tracking-tight">{pct == null ? "—" : `${p.toFixed(1)}%`}</div>
+          <div className="tnum text-[30px] font-semibold tracking-tight">{pct == null ? "–" : `${p.toFixed(1)}%`}</div>
         </div>
       </div>
       <div className="mt-auto grid grid-cols-2 gap-3">
